@@ -1,0 +1,11 @@
+.alert {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: aqua;
+}
+
+

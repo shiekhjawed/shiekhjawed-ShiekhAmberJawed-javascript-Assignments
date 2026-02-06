@@ -59,9 +59,6 @@ if (isNaN(num1) || isNaN(num2)) {
         console.log("Both numbers are equal.");
     }
 }
-
-
-
 //3. Write a program that takes input a number from user & state whether the number is positive, negative or zero. 
 
 // Take input from the user
@@ -83,8 +80,6 @@ if (isNaN(num)) {
         console.log("The number is zero.");
     }
 }
-
-
 
 //4. Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise
 
@@ -138,13 +133,6 @@ if (!char || char.length !== 1) {
         console.log(false); // It's not a vowel
     }
 }   
-
-
-
-
-
-
-
 // 5. Write a program that 
 // a. Store correct password in a JS variable. 
 // b.  Asks user to enter his/her password 
@@ -262,18 +250,7 @@ if (hour < 18) {
 
 console.log(greeting); // Output: "Good day"
 
-
-
-
-
-
-
-
 //7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if,else & else if statements 
-
-
-
-
 
     //same code with switch statement
 var time = prompt("Enter time in 24-hour format (e.g., 1900 for 7 PM): ");
@@ -357,6 +334,7 @@ if (!isNaN(time)) {
 // Invalid minutes like 2360 → prompts an error message.
 
 // If you enter non-numeric input like "abc" → prompts an error message.
+
 
 
 

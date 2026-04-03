@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 49 to 52 chapter</title>
+        <style>
+        /* 1 question */
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        #dataDisplay { margin-top: 30px; }
+        .user-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 5px; background: #f9f9f9; }
+
+        /* question 2 */
+         body { font-family: Arial; max-width: 800px; margin: 50px auto; padding: 20px; line-height: 1.6; }
+        .item { border: 1px solid #ddd; margin-bottom: 30px; padding: 20px; border-radius: 8px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .item h3 { color: #333; margin-top: 0; }
+        .short-content { max-height: 100px; overflow: hidden; position: relative; }
+        .full-content { display: none; }
+        .read-more-btn { 
+            background: #007bff; color: white; border: none; padding: 8px 15px; 
+            border-radius: 4px; cursor: pointer; font-size: 14px; margin-top: 10px;
+        }
+        .read-more-btn:hover { background: #0056b3; }
+        .dots { position: absolute; bottom: 0; right: 0; background: white; padding: 0 5px; }
+        /*  question 3 */
+                * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); padding: 30px; }
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            font-size: 2.5em; 
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .counter { 
+            text-align: center; 
+            background: linear-gradient(45deg, #3498db, #2980b9); 
+            color: white; 
+            padding: 15px 30px; 
+            border-radius: 50px; 
+            font-size: 1.5em; 
+            font-weight: bold;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(52,152,219,0.4);
+        }
+        
+        /* FORMS */
+        .form-container { 
+            background: linear-gradient(135deg, #a8e6cf, #dcedc1); 
+            padding: 30px; 
+            border-radius: 15px; 
+            margin-bottom: 30px; 
+            border: 3px solid #27ae60;
+            box-shadow: 0 8px 25px rgba(39,174,96,0.3);
+        }
+        .form-row { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+            gap: 20px; 
+        }
+        .form-row label { 
+            min-width: 120px; 
+            font-weight: bold; 
+            font-size: 1.3em; 
+            color: #2c3e50;
+        }
+        input, select { 
+            padding: 15px; 
+            border: 3px solid #bdc3c7; 
+            border-radius: 10px; 
+            font-size: 1.2em; 
+            width: 300px;
+            transition: all 0.3s;
+        }
+        input:focus, select:focus { 
+            border-color: #3498db; 
+            box-shadow: 0 0 15px rgba(52,152,219,0.3);
+            outline: none;
+        }
+        
+        /* BUTTONS */
+        button { 
+            background: linear-gradient(45deg, #27ae60, #2ecc71); 
+            color: white; 
+            border: none; 
+            padding: 15px 30px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            font-size: 1.2em; 
+            font-weight: bold;
+            margin: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(39,174,96,0.4);
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(39,174,96,0.6); }
+        .delete-btn { 
+            background: linear-gradient(45deg, #e74c3c, #c0392b) !important; 
+            box-shadow: 0 5px 15px rgba(231,76,60,0.4) !important;
+        }
+        .delete-btn:hover { box-shadow: 0 8px 25px rgba(231,76,60,0.6) !important; }
+        .edit-btn { 
+            background: linear-gradient(45deg, #f39c12, #e67e22) !important; 
+            color: white !important;
+            box-shadow: 0 5px 15px rgba(243,156,18,0.4) !important;
+        }
+        
+        /* TABLE - BIG FONTS */
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 30px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        th { 
+            background: linear-gradient(45deg, #34495e, #2c3e50); 
+            color: white; 
+            padding: 20px; 
+            font-size: 1.4em; 
+            font-weight: bold; 
+            text-align: center;
+        }
+        td { 
+            padding: 20px; 
+            font-size: 1.3em; 
+            font-weight: 500;
+            text-align: center;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        tr:hover { 
+            background: linear-gradient(45deg, #3498db, #2980b9); 
+            color: white;
+            transform: scale(1.02);
+            transition: all 0.3s;
+        }
+        tr:nth-child(even) { background: #f8f9fa; }
+        
+        /* GRADE BADGES */
+        .grade-badge { 
+            padding: 12px 25px; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .grade-A { background: linear-gradient(45deg, #27ae60, #2ecc71); color: white; }
+        .grade-B { background: linear-gradient(45deg, #3498db, #2980b9); color: white; }
+        .grade-C { background: linear-gradient(45deg, #f39c12, #e67e22); color: white; }
+        .grade-D { background: linear-gradient(45deg, #e74c3c, #c0392b); color: white; }
+        
+        /* EDIT FORM */
+        .edit-form { 
+            display: none; 
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7); 
+            padding: 30px; 
+            border-radius: 20px; 
+            margin: 30px 0; 
+            border: 4px solid #f39c12;
+            box-shadow: 0 10px 40px rgba(243,156,18,0.4);
+        }
+        .edit-form h4 { 
+            font-size: 2em; 
+            color: #e67e22; 
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .form-row { flex-direction: column; align-items: stretch; }
+            input, select { width: 100%; }
+            td, th { padding: 15px 10px; font-size: 1.1em; }
+        }
+     
+    </style>
+</head>
+<body>
+
+<!-- 1. Create a signup form and display form data in your web page on submission. -->
+
+<!-- 2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed. -->
+
+<!-- 3. In previous assignment you have created a tabular data using JavaScript. Let’s modify that. Create a form which takes student’s details and show each student detail in a table. Each row of the table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row. -->
+     <h2>Signup Form</h2>
+    <form id="signupForm">
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label>Phone:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <button type="submit">Signup</button>
+    </form>
+
+    <div id="dataDisplay"></div>
+
+    <script>
+        var signupForm = document.getElementById('signupForm');
+        var dataDisplay = document.getElementById('dataDisplay');
+        var userCounter = 0;
+
+        signupForm.onsubmit = function(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var gender = document.getElementById('gender').value;
+            
+            userCounter++;
+            
+            var userData = {
+                id: userCounter,
+                name: name,
+                email: email,
+                phone: phone,
+                gender: gender
+            };
+            
+            displayUserData(userData);
+            signupForm.reset();
+        };
+        
+        function displayUserData(user) {
+            var userCard = document.createElement('div');
+            userCard.className = 'user-card';
+            userCard.innerHTML = `
+                <h4>User #${user.id}</h4>
+                <p><strong>Name:</strong> ${user.name}</p>
+                <p><strong>Email:</strong> ${user.email}</p>
+                <p><strong>Phone:</strong> ${user.phone}</p>
+                <p><strong>Gender:</strong> ${user.gender}</p>
+            `;
+            dataDisplay.insertBefore(userCard, dataDisplay.firstChild);
+        }
+    </script>
+
+        <h1>Product Details with Read More</h1>
+    
+    <div class="item" id="item1">
+        <h3>iPhone 15 Pro</h3>
+        <div class="short-content" id="short1">
+            <p>The iPhone 15 Pro features a stunning titanium design that is both durable and lightweight. It comes with the A17 Pro chip, offering unprecedented performance for gaming and professional applications. The camera system has been completely redesigned with a 48MP main sensor...</p>
+            <span class="dots">...</span>
+        </div>
+        <div class="full-content" id="full1">
+            <p>The iPhone 15 Pro features a stunning titanium design that is both durable and lightweight. It comes with the A17 Pro chip, offering unprecedented performance for gaming and professional applications. The camera system has been completely redesigned with a 48MP main sensor that captures incredible detail. The new Action Button replaces the traditional mute switch, giving you quick access to your favorite functions. USB-C port makes charging and data transfer faster than ever. Available in four titanium finishes: Black Titanium, White Titanium, Blue Titanium, and Natural Titanium. The display is a 6.1-inch Super Retina XDR with ProMotion technology and always-on display. Battery life is improved with up to 23 hours of video playback.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleContent(1)">Read More</button>
+    </div>
+
+    <div class="item" id="item2">
+        <h3>Samsung Galaxy S24 Ultra</h3>
+        <div class="short-content" id="short2">
+            <p>Galaxy S24 Ultra redefines what a premium smartphone can do. With Galaxy AI, it opens up new possibilities with powerful AI features. The titanium frame and Gorilla Armor make it incredibly durable...</p>
+            <span class="dots">...</span>
+        </div>
+        <div class="full-content" id="full2">
+            <p>Galaxy S24 Ultra redefines what a premium smartphone can do. With Galaxy AI, it opens up new possibilities with powerful AI features. The titanium frame and Gorilla Armor make it incredibly durable. The 200MP main camera captures stunning photos in any lighting condition. S Pen is included for precise control and creativity. 6.8-inch Dynamic AMOLED 2X display with QHD+ resolution and 120Hz refresh rate. Powered by Snapdragon 8 Gen 3 for blazing fast performance. IP68 water and dust resistance. Available in Titanium Black, Gray, Violet, and Yellow. Battery capacity of 5000mAh with 45W fast charging support.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleContent(2)">Read More</button>
+    </div>
+
+    <script>
+        var currentOpenItem = null;
+        
+        function toggleContent(itemId) {
+            var shortContent = document.getElementById('short' + itemId);
+            var fullContent = document.getElementById('full' + itemId);
+            var button = event.target;
+            
+            // Close currently open item
+            if (currentOpenItem && currentOpenItem !== itemId) {
+                var prevShort = document.getElementById('short' + currentOpenItem);
+                var prevFull = document.getElementById('full' + currentOpenItem);
+                var prevButton = document.querySelector('#item' + currentOpenItem + ' .read-more-btn');
+                
+                prevShort.style.display = 'block';
+                prevFull.style.display = 'none';
+                prevButton.textContent = 'Read More';
+            }
+            
+            // Toggle current item
+            if (shortContent.style.display !== 'none') {
+                // Show full content
+                shortContent.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Read Less';
+                currentOpenItem = itemId;
+            } else {
+                // Hide full content
+                shortContent.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Read More';
+                currentOpenItem = null;
+            }
+        }
+    </script>
+    <!-- question 3 code is in separate file for better readability and organization  -->
+    <div class="container">
+        <h1>🎓 STUDENT MANAGEMENT SYSTEM</h1>
+        <div class="counter">
+            📊 Total Students: <span id="studentCount">0</span>
+        </div>
+        
+        <!-- ADD STUDENT FORM -->
+        <div class="form-container">
+            <h3 style="text-align: center; color: #27ae60; font-size: 1.8em; margin-bottom: 25px;">➕ ADD NEW STUDENT</h3>
+            <form id="studentForm">
+                <div class="form-row">
+                    <label>👤 Name:</label>
+                    <input type="text" id="name" placeholder="Enter full name (e.g. Amber)" required>
+                </div>
+                <div class="form-row">
+                    <label>📱 Phone:</label>
+                    <input type="text" id="phone" placeholder="Enter phone (e.g. 123-456-7890)" required>
+                </div>
+                <div class="form-row">
+                    <label>🎂 Age:</label>
+                    <input type="number" id="age" placeholder="Enter age (15-25)" min="15" max="25" required>
+                </div>
+                <div class="form-row">
+                    <label>📊 Grade:</label>
+                    <select id="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="A">⭐ A (Excellent)</option>
+                        <option value="B">⭐⭐ B (Good)</option>
+                        <option value="C">⭐⭐⭐ C (Average)</option>
+                        <option value="D">⭐⭐⭐⭐ D (Poor)</option>
+                    </select>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">➕ ADD STUDENT</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- EDIT FORM (HIDDEN) -->
+        <div class="edit-form" id="editFormContainer">
+            <h4>✏️ EDIT STUDENT DETAILS</h4>
+            <form id="editForm">
+                <input type="hidden" id="editId">
+                <div class="form-row">
+                    <label>👤 Name:</label>
+                    <input type="text" id="editName" required>
+                </div>
+                <div class="form-row">
+                    <label>📱 Phone:</label>
+                    <input type="text" id="editPhone" required>
+                </div>
+                <div class="form-row">
+                    <label>🎂 Age:</label>
+                    <input type="number" id="editAge" min="15" max="25" required>
+                </div>
+                <div class="form-row">
+                    <label>📊 Grade:</label>
+                    <select id="editGrade" required>
+                        <option value="A">⭐ A (Excellent)</option>
+                        <option value="B">⭐⭐ B (Good)</option>
+                        <option value="C">⭐⭐⭐ C (Average)</option>
+                        <option value="D">⭐⭐⭐⭐ D (Poor)</option>
+                    </select>
+                </div>
+                <div style="text-align: center;">
+                    <button type="button" onclick="saveEdit()" style="background: linear-gradient(45deg, #27ae60, #2ecc71);">💾 SAVE CHANGES</button>
+                    <button type="button" onclick="cancelEdit()" style="background: linear-gradient(45deg, #95a5a6, #7f8c8d);">❌ CANCEL</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- STUDENTS TABLE -->
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>👤 STUDENT NAME</th>
+                    <th>📱 PHONE</th>
+                    <th>🎂 AGE</th>
+                    <th>📊 GRADE</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+        </table>
+    </div>
+
+    <script>
+        var students = [];
+        var nextId = 1;
+        
+        var studentForm = document.getElementById('studentForm');
+        var editFormContainer = document.getElementById('editFormContainer');
+        var studentTableBody = document.getElementById('studentTableBody');
+        var studentCount = document.getElementById('studentCount');
+        
+        // ADD STUDENT
+        studentForm.onsubmit = function(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var age = document.getElementById('age').value;
+            var grade = document.getElementById('grade').value;
+            
+            var student = {
+                id: nextId++,
+                name: name.toUpperCase(),
+                phone: phone,
+                age: age,
+                grade: grade
+            };
+            
+            students.push(student);
+            renderTable();
+            studentForm.reset();
+            alert('✅ NEW STUDENT ADDED!');
+        };
+        
+        // RENDER TABLE - HUGE FONTS, ALL DATA VISIBLE
+        function renderTable() {
+            studentTableBody.innerHTML = '';
+            for (var i = 0; i < students.length; i++) {
+                var row = document.createElement('tr');
+                row.innerHTML = `
+                    <td style="font-size: 1.5em; font-weight: bold; color: #2c3e50;">#${students[i].id}</td>
+                    <td style="font-size: 1.4em; font-weight: bold; color: #27ae60;">${students[i].name}</td>
+                    <td style="font-size: 1.3em;">${students[i].phone}</td>
+                    <td style="font-size: 1.3em; color: #e74c3c;">${students[i].age} years</td>
+                    <td><span class="grade-badge grade-${students[i].grade}">${students[i].grade}</span></td>
+                    <td style="font-size: 1.2em;">
+                        <button class="edit-btn" onclick="editStudent(${students[i].id})">✏️ EDIT</button>
+                        <button class="delete-btn" onclick="deleteStudent(${students[i].id})">🗑️ DELETE</button>
+                    </td>
+                `;
+                studentTableBody.appendChild(row);
+            }
+            studentCount.textContent = students.length;
+        }
+        
+        // EDIT STUDENT
+        function editStudent(id) {
+            editFormContainer.style.display = 'block';
+            editFormContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            for (var i = 0; i < students.length; i++) {
+                if (students[i].id == id) {
+                    document.getElementById('editId').value = students[i].id;
+                    document.getElementById('editName').value = students[i].name;
+                    document.getElementById('editPhone').value = students[i].phone;
+                    document.getElementById('editAge').value = students[i].age;
+                    document.getElementById('editGrade').value = students[i].grade;
+                    break;
+                }
+            }
+        }
+        
+        // SAVE EDIT
+        function saveEdit() {
+            var id = parseInt(document.getElementById('editId').value);
+            for (var i = 0; i < students.length; i++) {
+                if (students[i].id == id) {
+                    students[i].name = document.getElementById('editName').value.toUpperCase();
+                    students[i].phone = document.getElementById('editPhone').value;
+                    students[i].age = document.getElementById('editAge').value;
+                    students[i].grade = document.getElementById('editGrade').value;
+                    break;
+                }
+            }
+            renderTable();
+            cancelEdit();
+            alert('✏️ STUDENT UPDATED!');
+        }
+        
+        // DELETE
+        function deleteStudent(id) {
+            if (confirm('🗑️ Delete this student?')) {
+                students = students.filter(function(student) {
+                    return student.id != id;
+                });
+                renderTable();
+                alert('🗑️ STUDENT DELETED!');
+            }
+        }
+        
+        // CANCEL
+        function cancelEdit() {
+            editFormContainer.style.display = 'none';
+            document.getElementById('editForm').reset();
+        }
+    </script>
+       
+
+</body>
+</html>
+
+
+           

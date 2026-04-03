@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>javascript Assignment 43 to 48 chapter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    /* 2 question */
+   .mobile-img {
+            width: 100px;
+            margin: 10px;
+            cursor: pointer;
+    }
+      /* 3 question */
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        /* 4 question */
+     .counter-container { text-align: center; font-size: 24px; margin: 50px; }
+
+
+
+        button { padding: 10px 20px; font-size: 18px; margin: 10px; }
+  </style>
+</head>
+
+
+
+<!-- 1. Show an alert box on click on a link.
+
+2. Display some Mobile images in browser. On click on an image Show the message in alert to user.
+
+3. Display 10 student records in a table and each row should contain a delete button. If you click on a button to delete a record, the entire row should be deleted.
+
+4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
+
+5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser. -->
+<body>
+  <!-- // 1. Alert on link click -->
+
+        <a href="#" id="myLink">Click me for Alert!</a>
+
+    <script>
+        var link = document.getElementById('myLink');
+        link.onclick = function() {
+            alert('Hello! You clicked the link!');
+            return false; // Prevent default link behavior
+        };
+    </script>
+
+    <hr />
+
+    
+
+
+
+     
+    <!-- <h2>Mobile Phone lookup</h2> --> 
+
+    <img src="0x0.webp" 
+         alt="iPhone 3G" class="mobile-img" onclick="showAlert('You clicked on iPhone 3G')" />
+         
+    <img src="b36a88525be8a6a100f298b50358aaf3.jpg" 
+         alt="Samsung S7 Edge" class="mobile-img" onclick="showAlert('You clicked on Samsung S7 Edge')" />
+         
+    <img src="0x0.webp" 
+         alt="Nokia 5230" class="mobile-img" onclick="showAlert('You clicked on Nokia 5230')" />
+    <img src="b36a88525be8a6a100f298b50358aaf3.jpg" 
+         alt="Huawei Ascend" class="mobile-img" onclick="showAlert('You clicked on Huawei Ascend')" />
+
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+
+
+  <!-- 3. Table with 10 students and delete button -->
+       <h3>Student Records</h3>
+    <table id="studentTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td><td>John</td><td>20</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td><td>Jane</td><td>22</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td><td>Bob</td><td>19</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td><td>Alice</td><td>21</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td><td>Mike</td><td>23</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td><td>Sarah</td><td>20</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td><td>Tom</td><td>24</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td><td>Lisa</td><td>22</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td><td>David</td><td>21</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>10</td><td>Emma</td><td>19</td><td><button class="deleteBtn">Delete</button></td>
+        </tr>
+    </table>
+
+    <script>
+        var deleteButtons = document.getElementsByClassName('deleteBtn');
+        for(var i = 0; i < deleteButtons.length; i++) {
+            deleteButtons[i].onclick = function() {
+                if(confirm('Are you sure you want to delete this record?')) {
+                    var row = this.parentNode.parentNode;
+                    row.parentNode.removeChild(row);
+                }
+            };
+        }
+</script>
+
+
+    <!--  4. Counter with increase and decrease buttons -->
+      
+        <div class="counter-container">
+        <h2>Counter: <span id="counterValue">0</span></h2>
+        <button id="increaseBtn">Increase</button>
+        <button id="decreaseBtn">Decrease</button>
+    </div>
+
+    <script>
+        var counterValue = 0;
+        var counterDisplay = document.getElementById('counterValue');
+        var increaseBtn = document.getElementById('increaseBtn');
+        var decreaseBtn = document.getElementById('decreaseBtn');
+
+        increaseBtn.onclick = function() {
+            counterValue++;
+            counterDisplay.innerHTML = counterValue;
+        };
+
+        decreaseBtn.onclick = function() {
+            counterValue--;
+            counterDisplay.innerHTML = counterValue;
+        };
+    </script>
+    <!-- // 5. Image hover to change source -->
+        <h3>Hover over the image</h3>
+    <img id="hoverImg" src="./italianpasta.jpeg" alt="Hover Image" width="250px" height="250px"
+         style="cursor:pointer; border:2px solid #ccc;">
+
+    <script>
+        var img = document.getElementById('hoverImg');
+        var originalSrc = img.src;
+        
+        img.onmouseover = function() {
+            img.src = './cheeseburger.jpeg';  // ✅ Shows Italian Pasta on hover
+        };
+        
+        img.onmouseout = function() {
+            img.src = './salaad.jpeg';          // ✅ Shows Cakes when mouse leaves
+        };
+    </script>
+
+
+</body>
+</html>

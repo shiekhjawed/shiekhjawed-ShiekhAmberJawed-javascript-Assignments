@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice problem Array, Object,loops if/else constructor</title>
+    <style>
+body {
+    background: radial-gradient(circle, #a18cd1, #9b2a7b);}
+    </style>
+</head>
+<body>
+    <script>
+    
+// 1. Student Result System: Create a student object and check pass/fail based on marks.
+// Create student objects
+
+// 1. Student Result System
+
+var student1 = {
+    name: "Salaar",
+    marks: 95
+};
+
+var student2 = {
+    name: "Ziyaan",
+    marks: 30
+};
+
+// function to check result
+function checkResult(stu) {
+    if (stu.marks >= 35) {
+        console.log(`${stu.name} Pass`);
+    } else {
+        console.log(`${stu.name} Fail`);
+    }
+}
+
+checkResult(student1);
+checkResult(student2);
+</script>
+    <script>
+// 2. Online Store Cart Total: Calculate total bill using an array and loop.
+
+var prices = [100, 200, 300];
+var total = 0;
+
+for (var i = 0; i < prices.length; i++) {
+    total += prices[i];
+}
+
+console.log(`Total: ${total}`);
+
+</script>
+<hr>
+    <script>
+// 3. Login System: Check email and password using if/else.
+var email = prompt("Enter your email:").trim();
+var password = prompt("Enter your password:").trim();
+
+if (email === "admin@mail.com" && password === "1234") {
+    console.log(`Login Successful`);
+} else {
+    console.log(`Invalid Credentials`);
+}
+</script>
+    <script>
+// 4. Product Stock Checker: Loop through products array and display stock availability.
+
+var products = [
+    { name: "Phone", stock: 5 },
+    { name: "Laptop", stock: 10 },
+    { name: "linux", stock: 0 }
+];
+
+for (var i = 0; i < products.length; i++) {
+    if (products[i].stock > 0) {
+        console.log(`${products[i].name} is Available`);
+    } else {
+        console.log(`${products[i].name} is Out of Stock`);
+    }
+}
+</script>
+<hr>
+    <script>
+    
+// 5. User Search Feature: Search a username inside an array.
+
+var users = ["rija", "salaar","Ziyaan", "Ayaan"];
+var search = "salaar";
+var found = false;
+
+for (var i = 0; i < users.length; i++) {
+    if (users[i] === search) {
+        found = true;
+        break;
+    }
+}
+
+console.log(`${found ? "User Found" : "User Not Found"}`);
+</script>
+<hr>
+<script>
+    
+// 6. Discount System: Apply discount if user is a member.
+
+var isMember = true;
+var price = 100;
+
+if (isMember) {
+    price = price - (price * 0.1);
+}
+
+console.log(`Final Price: ${price}`);
+</script>
+
+    <script>
+// 7. User Constructor: Create multiple users using constructor function.
+
+function User(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+var user1 = new User("salaar", 20);
+var user2 = new User("Ziyaan", 25);
+var user3 = new User("Ayaan", 30);
+
+console.log(user1, user2, user3);
+</script>
+
+    <script>
+    
+// 8. Bank Account System: Constructor with deposit and withdraw methods.
+
+function BankAccount(balance) {
+    this.balance = balance;
+
+    this.deposit = function(amount) {
+        this.balance += amount;
+    };
+
+    this.withdraw = function(amount) {
+        this.balance -= amount;
+    };
+}
+
+var acc = new BankAccount(1000);
+acc.deposit(500);
+acc.withdraw(200);
+
+console.log(acc.balance);
+</script>
+
+    <script>
+// 9. Car Showroom System: Display only available cars.
+
+var cars = [
+    { name: "lamborgini",
+     available: true 
+    },
+     { name: "ferrari", available: true },  
+
+    { name: "BMW", available: false }
+];
+
+for (var i = 0; i < cars.length; i++) {
+    if (cars[i].available) {
+        console.log(cars[i].name);
+    }
+}
+</script>
+
+    <script>
+// 10. Dress Up Game Logic: Change doll dress dynamically using object data.
+
+var doll = {
+    dress: "Red"
+};
+
+function changeDress(newDress) {
+    doll.dress = newDress;
+}
+
+changeDress("golden");
+console.log(doll.dress);
+</script>
+<hr>
+<script>
+// 11. To-Do App Logic: Add, delete, and display tasks using arrays and objects.
+
+var tasks = ["Task1", "Task2"];
+
+tasks.push("Task3"); // add
+tasks.splice(1, 1); // delete
+
+for (var i = 0; i < tasks.length; i++) {
+    console.log(tasks[i]);
+}
+</script>
+<script>
+// 12. Student Management System: Add students, find topper, and fail list.
+
+var students = [
+    { name: "ziyaan", marks: 80 },
+    { name: "rija", marks: 40 },
+    { name: "salaar", marks: 90 },
+    { name: "Ayaan", marks: 30 }
+];
+
+var topper = students[0];
+var failList = [];
+
+for (var i = 0; i < students.length; i++) {
+    if (students[i].marks > topper.marks) {
+        topper = students[i];
+    }
+
+    if (students[i].marks < 50) {
+        failList.push(students[i].name);
+    }
+}
+
+console.log("Topper:", topper.name);
+console.log("Fail List:", failList);
+</script>
+<script>
+// 13. Shopping Cart Object System: Calculate total and update quantities.
+
+var cart = [
+    { name: "Item1",
+     price: 100,
+      qty: 5 },
+    { name: "Item2", 
+    price: 50,
+     qty: 3 }
+];
+
+var total = 0;
+
+for (var i = 0; i < cart.length; i++) {
+    total += cart[i].price * cart[i].qty;
+}
+
+console.log("Total:", total);
+</script>
+<script>
+// 14. Movie Recommendation System: Show movies with rating greater than 3.
+
+var movies = [
+    { name: "Ashique2", 
+    rating: 10 },
+    { name: "tere naam", 
+    rating: 2 },
+    { name: "siyaara", 
+    rating: 8}
+];
+
+for (var i = 0; i < movies.length; i++) {
+    if (movies[i].rating > 3) {
+        console.log(movies[i].name);
+    }
+}
+</script>
+<script>
+// 15. Attendance System: Count total present students.
+
+var attendance = [true, false, true, true, false];
+var count = 0;
+
+for (var i = 0; i < attendance.length; i++) {
+    if (attendance[i]) {
+        count++;
+    }
+}
+
+console.log("Present Students:", count);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

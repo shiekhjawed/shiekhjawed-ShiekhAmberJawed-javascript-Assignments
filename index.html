@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechMart – Products</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --nav-bg: #ffffff;
+      --card-bg: #ffffff;
+      --primary: #3498db;
+      --accent: #27ae60;
+      --text: #2c3e50;
+      --light: #555;
+      --border: #eee;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f4f7fc, #e9f0f7);
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+    }
+
+    /* Header */
+    header {
+      background: var(--nav-bg);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    header .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    header .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    header .nav-links a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    /* Search bar */
+    .search-bar {
+      width: 240px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+    .search-bar:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    }
+
+    /* Main products section */
+    main {
+      padding: 40px 20px 60px;
+    }
+    main h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--text);
+      font-size: 1.6rem;
+    }
+    main .subtitle {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .card button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-right: 8px;
+    }
+    .card button.view {
+      background: var(--primary);
+      color: white;
+    }
+    .card button.cart {
+      background: #2ecc71;
+      color: white;
+    }
+    .card button:hover {
+      opacity: 0.9;
+    }
+
+    /* Footer / cart hint */
+    footer {
+      text-align: center;
+      padding: 16px;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Left side: Logo -->
+    <a href="index.html" class="logo">TechMart</a>
+
+    <!-- Right side: Search + Cart + Nav -->
+    <div class="nav-links">
+      <input type="text" class="search-bar" placeholder="Search products..." />
+
+      <a href="#" onclick="event.preventDefault(); alert('Cart is empty.');">Cart (0)</a>
+      <a href="details.html">Details</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Products</h1>
+    <p class="subtitle">Shop the latest gadgets and wearables</p>
+
+    <div class="products" id="products"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 TechMart. All rights reserved. | <a href="details.html">Product details</a></p>
+  </footer>
+
+  <script>
+    const products = [
+      { id: 1, name: "Laptop", price: "$800", image: "images (2).jfif", description: "Powerful laptop with high performance." },
+      { id: 2, name: "Phone", price: "$500", image: "images (1).jfif", description: "Latest smartphone with advanced camera." },
+      { id: 3, name: "Watch", price: "$200", image: "download.jfif", description: "Smart watch with fitness tracking." },
+      { id: 4, name: "Headphones", price: "$120", image: "images.jfif", description: "Wireless headphones with noise cancellation." }
+    ];
+
+    const container = document.getElementById("products");
+
+    products.forEach((product) => {
+      container.innerHTML += `
+        <div class="card">
+          <img src="${product.image}" alt="${product.name}" />
+          <h2>${product.name}</h2>
+          <h3>${product.price}</h3>
+          <button class="view" onclick="showDetails(${product.id})">View Details</button>
+          <button class="cart" onclick="addToCart(${product.id})">Add to Cart</button>
+        </div>
+      `;
+    });
+
+    function showDetails(id) {
+      localStorage.setItem("productId", id);
+      window.location.href = "details.html";
+    }
+
+    function addToCart(id) {
+      const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+      const existing = cart.find(p => p.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        const product = products.find(p => p.id === id);
+        cart.push({ ...product, quantity: 1 });
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      const cartLink = document.querySelector("footer a, header a[href='#']");
+      const cartText = cartLink.innerText;
+      const match = cartText.match(/\((\d+)\)/);
+      const oldCount = match ? match[1] : 0;
+      const newCount = parseInt(oldCount) + 1;
+      cartLink.innerText = `Cart (${newCount})`;
+
+      alert("Product added to cart!");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | TechMart</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --nav-bg: #ffffff;
+      --card-bg: #ffffff;
+      --primary: #3498db;
+      --accent: #27ae60;
+      --text: #2c3e50;
+      --light: #555;
+      --border: #eee;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f4f7fc, #e9f0f7);
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+    }
+    header {
+      background: var(--nav-bg);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    header .nav-links a {
+      margin-left: 20px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    header .nav-links a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px 60px;
+    }
+    .detail-container {
+      background: var(--card-bg);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .product-image {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+    .product-image img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .product-info h1 {
+      margin: 0 0 8px;
+      font-size: 1.6rem;
+      color: var(--text);
+    }
+    .product-info h2 {
+      margin: 8px 0 12px;
+      font-size: 1.2rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .product-info p {
+      color: var(--light);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .features {
+      margin-bottom: 20px;
+    }
+    .features h3 {
+      margin: 0 0 8px;
+      color: var(--text);
+      font-size: 1.1rem;
+    }
+    .features ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .features li {
+      margin-bottom: 4px;
+      color: var(--light);
+      line-height: 1.5;
+    }
+    .delivery-info {
+      background: #ecf0f1;
+      padding: 14px 18px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+      margin-bottom: 20px;
+    }
+    .delivery-info h3 {
+      margin: 0 0 8px;
+      color: var(--text);
+      font-size: 1.1rem;
+    }
+    .delivery-info p {
+      margin: 4px 0;
+      font-size: 0.95rem;
+    }
+    .btn-group {
+      margin-top: 16px;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      margin-right: 8px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-secondary {
+      background: #666;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .back-link {
+      margin-top: 16px;
+      display: inline-block;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TechMart</a>
+    <div class="nav-links">
+      <a href="index.html">Products</a>
+      <a href="details.html">Details</a>
+      <a href="#" onclick="event.preventDefault();">Cart</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="detail-container" id="detail-container">
+      <!-- filled with JS -->
+    </div>
+  </main>
+
+  <script>
+    const products = [
+      {
+        id: 1,
+        name: "Laptop",
+        price: "$800",
+        image: "images (2).jfif",
+        description: "Powerful laptop with high performance, perfect for work, gaming, and content creation.",
+        features: [
+          "Intel Core i7 processor",
+          "16GB RAM, 512GB SSD",
+          "Full HD 15.6\" display",
+          "Backlit keyboard and long battery life"
+        ],
+        delivery: "Fast delivery within 2–3 business days across Pakistan. Free shipping on orders above $100."
+      },
+      {
+        id: 2,
+        name: "Phone",
+        price: "$500",
+        image: "images (1).jfif",
+        description: "Latest smartphone with advanced camera and long battery life.",
+        features: [
+          "6.7\" OLED display",
+          "Triple camera setup up to 108MP",
+          "5000mAh battery",
+          "Face unlock and fast charging"
+        ],
+        delivery: "Delivered within 1–2 business days. Cash on delivery available."
+      },
+      {
+        id: 3,
+        name: "Watch",
+        price: "$200",
+        image: "download.jfif",
+        description: "Smart watch with fitness tracking and heart‑rate monitoring.",
+        features: [
+          "Water‑resistant design",
+          "Heart‑rate and sleep tracking",
+          "Notifications from phone",
+          "Long‑lasting battery up to 7 days"
+        ],
+        delivery: "Expected delivery in 3–5 business days. Free shipping nationwide."
+      },
+      {
+        id: 4,
+        name: "Headphones",
+        price: "$120",
+        image: "images.jfif",
+        description: "Wireless headphones with noise cancellation and crystal‑clear sound.",
+        features: [
+          "Active noise cancellation",
+          "Up to 30 hours battery life",
+          "Bluetooth 5.0 connectivity",
+          "Comfortable over‑ear design"
+        ],
+        delivery: "Ready‑to‑ship. Delivery within 2 days in major cities."
+      }
+    ];
+
+    const savedId = localStorage.getItem("productId");
+    const product = products.find(p => p.id == savedId);
+    const detailContainer = document.getElementById("detail-container");
+
+    if (product) {
+      detailContainer.innerHTML = `
+        <div class="product-grid">
+          <div class="product-image">
+            <img src="${product.image}" alt="${product.name}" />
+          </div>
+          <div class="product-info">
+            <h1>${product.name}</h1>
+            <h2>${product.price}</h2>
+            <p>${product.description}</p>
+
+            <div class="features">
+              <h3>Key Features</h3>
+              <ul>
+                ${product.features.map(feat => `>${feat}</li>`).join("")}
+              </ul>
+            </div>
+
+            <div class="delivery-info">
+              <h3>Delivery & Shipping</h3>
+              <p>${product.delivery}</p>
+              <p><strong>Shipping type:</strong> Standard courier</p>
+              <p><strong>Returns:</strong> 7‑day return window if unused.</p>
+            </div>
+
+            <div class="btn-group">
+              <button class="btn btn-primary" onclick="alert('Added to cart!')">Add to Cart</button>
+              <button class="btn btn-secondary" onclick="alert('Buy Now clicked!')">Buy Now</button>
+            </div>
+
+            <a href="index.html" class="back-link">← Back to Products</a>
+          </div>
+        </div>
+      `;
+    } else {
+      detailContainer.innerHTML = `
+        <h1>Product not found</h1>
+        <a href="index.html" class="back-link">← Back to Products</a>
+      `;
+    }
+  </script>
+</body>
+</html>

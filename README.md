@@ -1,3 +1,4 @@
+
 # 👋 Hi, I'm **Sheikh Amber Jawed**
 
 ### Full-Stack Developer (In Progress) | Lifelong Learner
@@ -9,7 +10,7 @@
 <br>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-4039-ad1c-14e8eea4fe01.png" width="520" alt="Coding Laptop"/>
+  <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width="420" alt="Developer Coding on Laptop"/>
 </div>
 
 <p align="center">
@@ -96,8 +97,12 @@
 ### 💻 Currently Working On
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212747119-4e8f6c0c-1d0b-4b0e-9e0b-1e0e0e0e0e0e.gif" width="400" alt="Working on Laptop"/>
+  <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Designer.gif" width="380" alt="Working on Laptop"/>
 </div>
+
+<p align="center">
+  Building cool projects with React + Express.js 🚀
+</p>
 
 ---
 

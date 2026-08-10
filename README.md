@@ -8,6 +8,10 @@
 
 <br>
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-4039-ad1c-14e8eea4fe01.png" width="520" alt="Coding Laptop"/>
+</div>
+
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=shiekhjawed&style=flat-square&color=blue" alt="Profile Views"/>
   <img src="https://img.shields.io/github/followers/shiekhjawed?style=flat-square&logo=github&logoColor=white&label=Followers" alt="Followers"/>
@@ -78,4 +82,53 @@
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=shiekhjawed&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiekhjawed&layout=compact&theme=tokyonight&hide_border=true" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shiekhjawed&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</div>
+
+---
+
+### 💻 Currently Working On
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212747119-4e8f6c0c-1d0b-4b0e-9e0b-1e0e0e0e0e0e.gif" width="400" alt="Working on Laptop"/>
+</div>
+
+---
+
+### 📫 Let's Connect
+
+<p align="center">
+  <a href="mailto:shiekhamberjawed@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/shiekh-amber-jawed-856602255/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://github.com/shiekhjawed">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/shiekhamberjawed/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://www.facebook.com/100009886772550">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+</p>
+
+---
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+</div>
+
+<br>
+
+<p align="center">
+  <i>Thanks for visiting! Feel free to star ⭐ my repositories or drop a message.</i>
+</p>

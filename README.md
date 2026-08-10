@@ -1,73 +1,81 @@
-# 👋 Hi, I'm Sheikh Amber Jawed
+# 👋 Hi, I'm **Sheikh Amber Jawed**
 
-💻 **Full-Stack Developer (In Progress)** | 🌱 **Lifelong Learner**  
-🚀 Passionate about building responsive, user-friendly web applications and robust backend services step by step.
+### Full-Stack Developer (In Progress) | Lifelong Learner
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Building+Responsive+Web+Apps;Learning+Express.js+%26+Backend;Passionate+about+Clean+Code;Always+Shipping+Projects" alt="Typing SVG" />
+</div>
+
+<br>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=shiekhjawed&style=flat-square&color=blue" alt="Profile Views"/>
+  <img src="https://img.shields.io/github/followers/shiekhjawed?style=flat-square&logo=github&logoColor=white&label=Followers" alt="Followers"/>
+</p>
 
 ---
 
 ### 👨‍💻 About Me
+
 - 🎓 **BSc Engineering Graduate**
 - 🎓 **Master’s Program** (Completed 2 Semesters – USD)
-- 💻 **Front-End Developer**
-- 🌱 Currently learning **Express.js** & expanding my backend skills
-- ⚛️ Working with **React.js** for modern dynamic web applications
-- 📚 Continuously improving practical skills through real-world projects
+- 💻 Front-End Developer transitioning into Full-Stack
+- 🌱 Currently deepening skills in **Express.js**, **Node.js** & backend architecture
+- ⚛️ Building modern, dynamic applications with **React.js** + **Tailwind CSS**
+- 🚀 Focused on writing clean, maintainable, and production-ready code
+- 📚 Learning by building real-world projects every week
 
 ---
 
-### 🔧 Tech Stack & Tools
+### 🛠️ Tech Stack
 
-**Languages & Frameworks:**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,react,tailwind,express,nodejs,bootstrap,jquery,typescript" alt="Languages and Frameworks" />
-</p>
+**Frontend**  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
-**Version Control, Databases & Deployment:**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,vercel,netlify,firebase" alt="Deployment Tools" />
-</p>
+**Backend & Tools**  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-**Other Tools & Applications:**
-- Microsoft Office (Word, Excel, PowerPoint)
-- Surge.sh
-
----
-
-### 🌐 Live Demos & Portfolios
-
-**Personal Portfolios:**
-- 🚀 [Personal Portfolio](https://shiekhjawed.github.io/portfolio/)
-- 🌐 [Netlify Portfolio Demo 1](https://cheerful-moxie-9ae3e4.netlify.app/)
-- 🌐 [Netlify Portfolio Demo 2](https://splendorous-duckanoo-354c18.netlify.app/)
-
-**Deployed Projects:**
-- ⚡ [React + Tailwind CSS (Vite Project)](https://veet-84zn.vercel.app/)
-- ⚛️ [Simple React Application](https://my-app-phi-mauve-26.vercel.app/)
-- 🔐 [Firebase Authentication App](https://sign-f-irebase.vercel.app/)
+**Deployment**  
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![Surge](https://img.shields.io/badge/Surge.sh-5A5A5A?style=for-the-badge&logo=surge&logoColor=white)
 
 ---
 
-### 📌 Projects
-- 🌐 **Personal Portfolio Website** – Built with HTML, CSS, and JavaScript to showcase skills, projects, and contact info.
-- ⚡ **Vite + React + Tailwind CSS** – Fast, modern UI development using Tailwind styling and Vite.
-- 🔐 **Firebase Authentication** – Web application implementing secure user authentication using Firebase.
-- 🧠 **JavaScript Practice Projects** – Interactive web applications focusing on core JavaScript logic.
-- 🎨 **CSS & Bootstrap Projects** – Modern, fully responsive UI designs.
+### 🚀 Featured Projects
+
+| Project | Description | Tech | Live Demo |
+|---------|-------------|------|-----------|
+| **Personal Portfolio** | Clean & responsive portfolio showcasing skills and projects | HTML, CSS, JS | [Live](https://shiekhjawed.github.io/portfolio/) |
+| **Vite + React + Tailwind** | Modern, fast UI built with Vite + Tailwind CSS | React, Tailwind, Vite | [Live](https://veet-84zn.vercel.app/) |
+| **Firebase Auth App** | Complete authentication system with Firebase | React, Firebase | [Live](https://sign-f-irebase.vercel.app/) |
+| **Simple React App** | Clean React application demonstrating core concepts | React | [Live](https://my-app-phi-mauve-26.vercel.app/) |
+| **Netlify Portfolio 1** | Alternative portfolio design | HTML/CSS/JS | [Live](https://cheerful-moxie-9ae3e4.netlify.app/) |
+| **Netlify Portfolio 2** | Another modern portfolio variation | HTML/CSS/JS | [Live](https://splendorous-duckanoo-354c18.netlify.app/) |
 
 ---
 
-### 📄 Resumes (ATS-Friendly)
+### 📄 Resume
 
-- 📌 [Resume 1 (JobLeads)](https://www.jobleads.com/resume-builder/result/12342019?jobId=)
-- 📌 [Resume 2 (Enhancv)](https://app.enhancv.com/share/36c5925d/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic)
-- 📌 [Resume 3 (PDF on GitHub)](https://github.com/shiekhjawed/About-My-Self/blob/main/AI%20PRO%20RESUME.pdf)
+- [Resume (JobLeads)](https://www.jobleads.com/resume-builder/result/12342019?jobId=)
+- [Resume (Enhancv)](https://app.enhancv.com/share/36c5925d/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic)
+- [Resume (PDF)](https://github.com/shiekhjawed/About-My-Self/blob/main/AI%20PRO%20RESUME.pdf)
 
 ---
 
-### 📫 Connect With Me
+### 📊 GitHub Stats
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shiekhamberjawed@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shiekh-amber-jawed-856602255/)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/100009886772550)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/shiekhamberjawed/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shiekhjawed)
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=shiekhjawed&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img
